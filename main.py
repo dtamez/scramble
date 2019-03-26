@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 class Tile:
     """
-    Rerpresents one scramble squares puzzle peice.
-    The id is an arbitrary way of labeling each peice.
+    Rerpresents one scramble squares puzzle piece.
+    The id is an arbitrary way of labeling each piece.
     north, south, east, and west represent the values at each side of the square.
-    rotation is the number of clockwise turns the peice has been through in a given solution.
+    rotation is the number of clockwise turns the piece has been through in a given solution.
     """
 
     def __init__(self, id, north, east, south, west, rotation=0):
@@ -27,7 +27,7 @@ class Tile:
 def is_valid(tiles):
     """
     Check that the tile being placed correctly fits with the other tiles.
-    Only validate the last peice as previous peices are already valid.
+    Only validate the last piece as previous pieces are already valid.
     """
     current = len(tiles)
     if current < 2:
